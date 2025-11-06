@@ -60,21 +60,21 @@ export const Hero = () => {
           {/* Stats Bar */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto mt-8">
             <div className="pixel-border-sm bg-card p-4">
-              <div className="text-xs text-muted-foreground mb-1">LEVEL</div>
-              <div className="text-2xl font-['Press_Start_2P'] text-accent">
-                INTERN
+              <div className="text-xs text-muted-foreground mb-1">EXPERIENCE</div>
+              <div className="text-2xl font-['Press_Start_2P'] text-foreground">
+                1+ YR
               </div>
             </div>
             <div className="pixel-border-sm bg-card p-4">
-              <div className="text-xs text-muted-foreground mb-1">CLASS</div>
-              <div className="text-2xl font-['Press_Start_2P'] text-primary">
-                MERN
+              <div className="text-xs text-muted-foreground mb-1">PROJECTS</div>
+              <div className="text-2xl font-['Press_Start_2P'] text-foreground">
+                4+
               </div>
             </div>
             <div className="pixel-border-sm bg-card p-4">
-              <div className="text-xs text-muted-foreground mb-1">SPEC</div>
-              <div className="text-2xl font-['Press_Start_2P'] text-secondary">
-                GEN AI
+              <div className="text-xs text-muted-foreground mb-1">TECH STACK</div>
+              <div className="text-2xl font-['Press_Start_2P'] text-foreground">
+                MERN+AI
               </div>
             </div>
           </div>

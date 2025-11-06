@@ -25,50 +25,77 @@ const Index = () => {
       {/* Left Decorative Panel - Only on large screens */}
       <div className="hidden xl:block fixed left-0 top-0 h-screen w-64 pointer-events-none z-10">
         <div className="p-6 space-y-6">
-          {/* Game Stats Panel */}
-          <div className="pixel-border bg-card/80 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] text-primary mb-3">
-              ★ STATS ★
+          {/* Profile Summary */}
+          <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
+            <div className="font-['Press_Start_2P'] text-[10px] text-muted-foreground mb-3">
+              ★ PROFILE ★
             </div>
             <div className="space-y-2 text-xs">
               <div className="flex justify-between">
-                <span className="text-muted-foreground">PROJECTS</span>
-                <span className="text-primary">05</span>
+                <span className="text-muted-foreground">ROLE</span>
+                <span className="text-foreground">INTERN</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">SKILLS</span>
-                <span className="text-primary">20+</span>
+                <span className="text-muted-foreground">STACK</span>
+                <span className="text-foreground">MERN</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">XP</span>
-                <span className="text-primary">9999</span>
+                <span className="text-muted-foreground">FOCUS</span>
+                <span className="text-foreground">AI/ML</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">LOCATION</span>
+                <span className="text-foreground">HYD</span>
               </div>
             </div>
           </div>
 
-          {/* Power-ups Display */}
-          <div className="pixel-border bg-card/80 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] text-primary mb-3">
-              ⚡ POWER-UPS
+          {/* Tech Stack */}
+          <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
+            <div className="font-['Press_Start_2P'] text-[10px] text-muted-foreground mb-3">
+              ⚙️ TECH STACK
             </div>
             <div className="grid grid-cols-3 gap-2">
-              {["🎯", "🚀", "💡", "⚙️", "🎨", "🔧"].map((emoji, i) => (
+              {[
+                { label: "React", icon: "⚛️" },
+                { label: "Node", icon: "🟢" },
+                { label: "Python", icon: "🐍" },
+                { label: "Mongo", icon: "🍃" },
+                { label: "AI/ML", icon: "🤖" },
+                { label: "Git", icon: "📦" }
+              ].map((tech, i) => (
                 <div
                   key={i}
-                  className="pixel-border-sm bg-background/50 aspect-square flex items-center justify-center text-xl hover:scale-110 transition-transform"
-                  style={{ animation: `pulse ${2 + i * 0.3}s infinite` }}
+                  className="pixel-border-sm bg-background/50 aspect-square flex flex-col items-center justify-center text-center hover:bg-muted/50 transition-colors"
+                  title={tech.label}
                 >
-                  {emoji}
+                  <div className="text-lg">{tech.icon}</div>
+                  <div className="text-[6px] text-muted-foreground mt-1">{tech.label}</div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Pixel Character */}
-          <div className="pixel-border bg-card/80 backdrop-blur-sm p-4">
-            <div className="text-6xl text-center animate-bounce">🎮</div>
-            <div className="font-['Press_Start_2P'] text-[8px] text-center mt-2 text-muted-foreground">
-              PLAYER 1
+          {/* Current Status */}
+          <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
+            <div className="font-['Press_Start_2P'] text-[10px] text-muted-foreground mb-3">
+              📍 STATUS
+            </div>
+            <div className="space-y-3">
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <div className="w-2 h-2 bg-accent animate-pulse"></div>
+                  <span className="text-[8px] text-muted-foreground">CURRENT</span>
+                </div>
+                <div className="text-[9px] leading-relaxed">SDE Intern @ Bodhtree</div>
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <div className="w-2 h-2 bg-foreground/40"></div>
+                  <span className="text-[8px] text-muted-foreground">EDUCATION</span>
+                </div>
+                <div className="text-[9px] leading-relaxed">CS @ KMEC</div>
+              </div>
             </div>
           </div>
         </div>
@@ -77,26 +104,52 @@ const Index = () => {
       {/* Right Decorative Panel - Only on large screens */}
       <div className="hidden xl:block fixed right-0 top-0 h-screen w-64 pointer-events-none z-10">
         <div className="p-6 space-y-6">
-          {/* Quest Progress */}
-          <div className="pixel-border bg-card/80 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] text-primary mb-3">
-              📋 QUESTS
+          {/* Projects Stats */}
+          <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
+            <div className="font-['Press_Start_2P'] text-[10px] text-muted-foreground mb-3">
+              📊 PROJECTS
             </div>
             <div className="space-y-3">
               {[
-                { name: "HIRE ME", progress: 75 },
-                { name: "PORTFOLIO", progress: 100 },
-                { name: "NETWORK", progress: 60 },
-              ].map((quest, i) => (
+                { name: "PassManager", tech: "MERN" },
+                { name: "Brain Tumor AI", tech: "PyTorch" },
+                { name: "Spotify Clone", tech: "Web" },
+                { name: "Netflix Clone", tech: "HTML/CSS" },
+              ].map((project, i) => (
+                <div key={i} className="space-y-1">
+                  <div className="flex justify-between items-center">
+                    <span className="text-[9px] text-foreground">{project.name}</span>
+                    <span className="text-[7px] text-muted-foreground">{project.tech}</span>
+                  </div>
+                  <div className="h-1 bg-muted pixel-border-sm overflow-hidden">
+                    <div className="h-full bg-foreground/40 w-full"></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Skills Overview */}
+          <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
+            <div className="font-['Press_Start_2P'] text-[10px] text-muted-foreground mb-3">
+              🎯 SKILLS
+            </div>
+            <div className="space-y-3">
+              {[
+                { category: "Frontend", level: 85 },
+                { category: "Backend", level: 75 },
+                { category: "AI/ML", level: 70 },
+                { category: "Database", level: 65 },
+              ].map((skill, i) => (
                 <div key={i}>
                   <div className="flex justify-between text-[9px] mb-1">
-                    <span className="text-muted-foreground">{quest.name}</span>
-                    <span className="text-primary">{quest.progress}%</span>
+                    <span className="text-muted-foreground">{skill.category}</span>
+                    <span className="text-foreground">{skill.level}%</span>
                   </div>
                   <div className="h-2 bg-muted pixel-border-sm overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-primary to-accent transition-all duration-1000"
-                      style={{ width: `${quest.progress}%` }}
+                      className="h-full bg-foreground/40 transition-all duration-1000"
+                      style={{ width: `${skill.level}%` }}
                     />
                   </div>
                 </div>
@@ -104,52 +157,45 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Achievement Badges */}
-          <div className="pixel-border bg-card/80 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] text-primary mb-3">
-              🏆 BADGES
+          {/* Certifications */}
+          <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
+            <div className="font-['Press_Start_2P'] text-[10px] text-muted-foreground mb-3">
+              🏆 CERTS
             </div>
-            <div className="grid grid-cols-3 gap-2">
-              {["🥇", "⭐", "💎", "🔥", "🎖️", "👑"].map((badge, i) => (
+            <div className="space-y-2">
+              {[
+                "Web Dev",
+                "React.js",
+                "Java",
+                "DSA",
+                "JavaScript"
+              ].map((cert, i) => (
                 <div
                   key={i}
-                  className="pixel-border-sm bg-gradient-to-br from-primary/20 to-accent/20 aspect-square flex items-center justify-center text-xl"
-                  style={{
-                    animation: `pulse ${2.5 + i * 0.2}s infinite`,
-                  }}
+                  className="flex items-center gap-2 text-[9px]"
                 >
-                  {badge}
+                  <span className="text-foreground/60">✓</span>
+                  <span className="text-foreground/80">{cert}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Coin Counter */}
-          <div className="pixel-border bg-card/80 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] text-primary mb-2">
-              💰 COINS
+          {/* Contact Quick Access */}
+          <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
+            <div className="font-['Press_Start_2P'] text-[10px] text-muted-foreground mb-3">
+              📧 CONTACT
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-['Press_Start_2P'] text-accent neon-text">
-                999
+            <div className="space-y-2 text-[8px]">
+              <div className="flex items-start gap-2">
+                <span className="text-foreground/60">@</span>
+                <span className="text-foreground/80 break-all">abhiram1.chittampally@gmail.com</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-foreground/60">📱</span>
+                <span className="text-foreground/80">+91 6301544192</span>
               </div>
             </div>
-          </div>
-
-          {/* Floating Stars */}
-          <div className="space-y-2">
-            {[...Array(5)].map((_, i) => (
-              <div
-                key={i}
-                className="text-2xl animate-pulse"
-                style={{
-                  marginLeft: `${Math.random() * 100}px`,
-                  animationDelay: `${i * 0.3}s`,
-                }}
-              >
-                ✨
-              </div>
-            ))}
           </div>
         </div>
       </div>
