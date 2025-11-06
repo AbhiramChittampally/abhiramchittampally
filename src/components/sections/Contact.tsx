@@ -113,8 +113,8 @@ export const Contact = () => {
 
             {/* Social Links */}
             <div className="flex gap-4 justify-center pt-4 border-t-2 border-border">
-              <a
-                href="https://github.com/abhiram1"
+            <a
+                href="https://github.com/AbhiramChittampally"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="pixel-border-sm bg-card p-3 hover:bg-primary transition-colors group"
@@ -122,7 +122,7 @@ export const Contact = () => {
                 <Github className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
               </a>
               <a
-                href="https://linkedin.com/in/abhiram"
+                href="https://linkedin.com/in/abhiram-chittampally"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="pixel-border-sm bg-card p-3 hover:bg-primary transition-colors group"
