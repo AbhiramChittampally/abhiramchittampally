@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <section className="py-20 relative" id="about">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-['Press_Start_2P'] text-center mb-12 neon-text">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-['Press_Start_2P'] text-center mb-8 sm:mb-12 bright-text px-4">
           &lt; PLAYER STATS /&gt;
         </h2>
 
@@ -13,7 +13,7 @@ export const About = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-3 h-3 bg-accent animate-pulse"></div>
-                <h3 className="text-xl font-['Press_Start_2P'] text-primary">
+                <h3 className="text-sm sm:text-base md:text-xl font-['Press_Start_2P'] text-primary bright-text">
                   MISSION STATEMENT
                 </h3>
               </div>
@@ -36,7 +36,7 @@ export const About = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-3 h-3 bg-secondary animate-pulse"></div>
-              <h3 className="text-2xl font-['Press_Start_2P'] text-secondary">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-['Press_Start_2P'] text-secondary bright-text">
                 EDUCATION LOG
               </h3>
             </div>

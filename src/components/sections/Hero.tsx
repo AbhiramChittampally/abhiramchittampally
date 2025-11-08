@@ -40,7 +40,7 @@ export const Hero = () => {
 
           {/* Title with typing effect styling */}
           <div className="space-y-4">
-            <h1 className="text-3xl md:text-5xl neon-text mb-4">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl bright-text mb-4">
               ABHIRAM
               <br />
               CHITTAMPALLY
@@ -58,22 +58,22 @@ export const Hero = () => {
           </div>
 
           {/* Stats Bar */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto mt-8">
-            <div className="pixel-border-sm bg-card p-4">
-              <div className="text-xs text-muted-foreground mb-1">EXPERIENCE</div>
-              <div className="text-2xl font-['Press_Start_2P'] text-foreground">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 max-w-2xl mx-auto mt-8 px-4">
+            <div className="pixel-border-sm bg-card p-3 sm:p-4">
+              <div className="text-xs text-muted-foreground mb-1 bright-text">EXPERIENCE</div>
+              <div className="text-lg sm:text-xl md:text-2xl font-['Press_Start_2P'] text-foreground">
                 INTERN
               </div>
             </div>
-            <div className="pixel-border-sm bg-card p-4">
-              <div className="text-xs text-muted-foreground mb-1">PROJECTS</div>
-              <div className="text-2xl font-['Press_Start_2P'] text-foreground">
+            <div className="pixel-border-sm bg-card p-3 sm:p-4">
+              <div className="text-xs text-muted-foreground mb-1 bright-text">PROJECTS</div>
+              <div className="text-lg sm:text-xl md:text-2xl font-['Press_Start_2P'] text-foreground">
                 4+
               </div>
             </div>
-            <div className="pixel-border-sm bg-card p-4">
-              <div className="text-xs text-muted-foreground mb-1">TECH STACK</div>
-              <div className="text-2xl font-['Press_Start_2P'] text-foreground">
+            <div className="pixel-border-sm bg-card p-3 sm:p-4">
+              <div className="text-xs text-muted-foreground mb-1 bright-text">TECH STACK</div>
+              <div className="text-lg sm:text-xl md:text-2xl font-['Press_Start_2P'] text-foreground">
                 MERN+AI
               </div>
             </div>
@@ -92,11 +92,11 @@ export const Hero = () => {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-wrap gap-4 justify-center pt-4">
-            <PixelButton onClick={() => scrollToSection("projects")} variant="primary">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-4 px-4">
+            <PixelButton onClick={() => scrollToSection("projects")} variant="primary" size="sm" className="sm:size-md">
               ▶ VIEW QUESTS
             </PixelButton>
-            <PixelButton onClick={() => scrollToSection("contact")} variant="accent">
+            <PixelButton onClick={() => scrollToSection("contact")} variant="accent" size="sm" className="sm:size-md">
               ✉ MESSAGE
             </PixelButton>
           </div>

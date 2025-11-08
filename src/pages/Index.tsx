@@ -23,11 +23,11 @@ const Index = () => {
       </div>
 
       {/* Left Decorative Panel - Only on large screens */}
-      <div className="hidden xl:block fixed left-0 top-0 h-screen w-64 pointer-events-none z-10">
+      <div className="hidden xl:block fixed left-0 top-0 h-screen w-56 2xl:w-64 pointer-events-none z-10">
         <div className="p-6 space-y-6">
           {/* Profile Summary */}
           <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] text-muted-foreground mb-3">
+            <div className="font-['Press_Start_2P'] text-[10px] mb-3 bright-text">
               ★ PROFILE ★
             </div>
             <div className="space-y-2 text-xs">
@@ -52,7 +52,7 @@ const Index = () => {
 
           {/* Tech Stack */}
           <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] text-muted-foreground mb-3">
+            <div className="font-['Press_Start_2P'] text-[10px] mb-3 bright-text">
               ⚙️ TECH STACK
             </div>
             <div className="grid grid-cols-3 gap-2">
@@ -78,7 +78,7 @@ const Index = () => {
 
           {/* Current Status */}
           <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] text-muted-foreground mb-3">
+            <div className="font-['Press_Start_2P'] text-[10px] mb-3 bright-text">
               📍 STATUS
             </div>
             <div className="space-y-3">
@@ -102,11 +102,11 @@ const Index = () => {
       </div>
 
       {/* Right Decorative Panel - Only on large screens */}
-      <div className="hidden xl:block fixed right-0 top-0 h-screen w-64 pointer-events-none z-10">
+      <div className="hidden xl:block fixed right-0 top-0 h-screen w-56 2xl:w-64 pointer-events-none z-10">
         <div className="p-6 space-y-6">
           {/* Projects Stats */}
           <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] text-muted-foreground mb-3">
+            <div className="font-['Press_Start_2P'] text-[10px] mb-3 bright-text">
               📊 PROJECTS
             </div>
             <div className="space-y-3">
@@ -131,7 +131,7 @@ const Index = () => {
 
           {/* Skills Overview */}
           <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] text-muted-foreground mb-3">
+            <div className="font-['Press_Start_2P'] text-[10px] mb-3 bright-text">
               🎯 SKILLS
             </div>
             <div className="space-y-3">
@@ -159,7 +159,7 @@ const Index = () => {
 
           {/* Certifications */}
           <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] text-muted-foreground mb-3">
+            <div className="font-['Press_Start_2P'] text-[10px] mb-3 bright-text">
               🏆 CERTS
             </div>
             <div className="space-y-2">
@@ -183,7 +183,7 @@ const Index = () => {
 
           {/* Contact Quick Access */}
           <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] text-muted-foreground mb-3">
+            <div className="font-['Press_Start_2P'] text-[10px] mb-3 bright-text">
               📧 CONTACT
             </div>
             <div className="space-y-2 text-[8px]">

@@ -37,7 +37,7 @@ export const Skills = () => {
   return (
     <section className="py-20 relative" id="skills">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-['Press_Start_2P'] text-center mb-4 neon-text">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-['Press_Start_2P'] text-center mb-4 bright-text px-4">
           &lt; INVENTORY /&gt;
         </h2>
         <p className="text-center text-muted-foreground mb-12">
@@ -73,7 +73,7 @@ export const Skills = () => {
         <div className="max-w-4xl mx-auto mt-16">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-3 h-3 bg-accent animate-pulse"></div>
-            <h3 className="text-2xl font-['Press_Start_2P'] text-accent">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-['Press_Start_2P'] text-accent bright-text">
               ACHIEVEMENTS
             </h3>
           </div>

@@ -58,7 +58,7 @@ export const Projects = () => {
   return (
     <section className="py-20 relative" id="projects">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-['Press_Start_2P'] text-center mb-4 neon-text">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-['Press_Start_2P'] text-center mb-4 bright-text px-4">
           &lt; QUEST LOG /&gt;
         </h2>
         <p className="text-center text-muted-foreground mb-12">
