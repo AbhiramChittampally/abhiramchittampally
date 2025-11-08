@@ -10,32 +10,32 @@ All colors MUST be HSL.
   :root {
     /* Pixel Game Color Palette */
     --background: 220 25% 12%;
-    --foreground: 180 100% 95%;
+    --foreground: 180 30% 75%;
 
     --card: 220 30% 16%;
-    --card-foreground: 180 100% 95%;
+    --card-foreground: 180 30% 75%;
 
     --popover: 220 30% 16%;
-    --popover-foreground: 180 100% 95%;
+    --popover-foreground: 180 30% 75%;
 
-    --primary: 180 100% 50%;
+    --primary: 180 60% 45%;
     --primary-foreground: 220 25% 12%;
 
-    --secondary: 280 100% 60%;
+    --secondary: 280 50% 50%;
     --secondary-foreground: 220 25% 12%;
 
     --muted: 220 20% 25%;
-    --muted-foreground: 180 20% 70%;
+    --muted-foreground: 180 20% 60%;
 
-    --accent: 50 100% 60%;
+    --accent: 50 70% 55%;
     --accent-foreground: 220 25% 12%;
 
-    --destructive: 0 100% 60%;
-    --destructive-foreground: 180 100% 95%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 180 30% 75%;
 
-    --border: 180 100% 50%;
+    --border: 180 60% 45%;
     --input: 220 30% 20%;
-    --ring: 180 100% 50%;
+    --ring: 180 60% 45%;
 
     --radius: 0rem;
     
