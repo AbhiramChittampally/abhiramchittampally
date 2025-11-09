@@ -1,12 +1,7 @@
-import { ButtonHTMLAttributes, forwardRef } from "react";
+import { forwardRef } from "react";
 import { cn } from "@/lib/utils";
 
-interface PixelButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "accent";
-  size?: "sm" | "md" | "lg";
-}
-
-export const PixelButton = forwardRef<HTMLButtonElement, PixelButtonProps>(
+export const PixelButton = forwardRef(
   ({ className, variant = "primary", size = "md", children, ...props }, ref) => {
     const variants = {
       primary: "bg-primary text-primary-foreground hover:translate-x-1 hover:translate-y-1",

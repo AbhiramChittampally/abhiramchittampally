@@ -1,5 +1,4 @@
 import { PixelCard } from "@/components/PixelCard";
-import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
@@ -47,7 +46,7 @@ const projects = [
   },
 ];
 
-const difficultyColors: Record<string, string> = {
+const difficultyColors = {
   EASY: "text-[hsl(var(--health-bar))]",
   MEDIUM: "text-accent",
   HARD: "text-secondary",

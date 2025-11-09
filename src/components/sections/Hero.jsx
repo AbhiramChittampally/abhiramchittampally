@@ -2,7 +2,7 @@ import { PixelButton } from "@/components/PixelButton";
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 export const Hero = () => {
-  const scrollToSection = (id: string) => {
+  const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 

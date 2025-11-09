@@ -1,12 +1,6 @@
-import { HTMLAttributes, ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
-interface PixelCardProps extends HTMLAttributes<HTMLDivElement> {
-  children: ReactNode;
-  glow?: boolean;
-}
-
-export const PixelCard = ({ children, className, glow, ...props }: PixelCardProps) => {
+export const PixelCard = ({ children, className, glow, ...props }) => {
   return (
     <div
       className={cn(
