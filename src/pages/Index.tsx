@@ -23,7 +23,7 @@ const Index = () => {
       </div>
 
       {/* Left Decorative Panel - Only on large screens */}
-      <div className="hidden xl:block fixed left-0 top-0 h-screen w-56 2xl:w-64 pointer-events-none z-10">
+      <div className="hidden xl:block fixed left-0 top-0 h-screen w-48 xl:w-56 2xl:w-64 pointer-events-none z-10">
         <div className="p-6 space-y-6">
           {/* Profile Summary */}
           <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
@@ -102,7 +102,7 @@ const Index = () => {
       </div>
 
       {/* Right Decorative Panel - Only on large screens */}
-      <div className="hidden xl:block fixed right-0 top-0 h-screen w-56 2xl:w-64 pointer-events-none z-10">
+      <div className="hidden xl:block fixed right-0 top-0 h-screen w-48 xl:w-56 2xl:w-64 pointer-events-none z-10">
         <div className="p-6 space-y-6">
           {/* Projects Stats */}
           <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
@@ -208,9 +208,9 @@ const Index = () => {
       <Contact />
 
       {/* Footer */}
-      <footer className="py-8 border-t-4 border-primary relative">
-        <div className="container mx-auto px-6 text-center">
-          <p className="font-['Press_Start_2P'] text-xs text-muted-foreground">
+      <footer className="py-6 md:py-8 border-t-4 border-primary relative">
+        <div className="container mx-auto px-4 md:px-6 text-center">
+          <p className="font-['Press_Start_2P'] text-[10px] sm:text-xs text-muted-foreground">
             © 2025 ABHIRAM CHITTAMPALLY
           </p>
           <p className="text-xs text-muted-foreground mt-2">
