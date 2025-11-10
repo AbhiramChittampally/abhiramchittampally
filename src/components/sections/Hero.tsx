@@ -1,5 +1,6 @@
 import { PixelButton } from "@/components/PixelButton";
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import profileImage from "@/assets/profile.png";
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -25,17 +26,13 @@ export const Hero = () => {
 
       <div className="container mx-auto px-4 md:px-6 xl:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8">
-          {/* Pixel Avatar */}
+          {/* Profile Photo */}
           <div className="inline-block pixel-border bg-card p-3 md:p-4 mb-4">
-            <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-gradient-to-br from-primary to-secondary relative">
-              {/* Simplified pixel character */}
-              <div className="absolute inset-0 grid grid-cols-8 grid-rows-8 gap-[1px] p-2">
-                {/* Face pixels */}
-                <div className="col-start-3 row-start-2 bg-accent"></div>
-                <div className="col-start-6 row-start-2 bg-accent"></div>
-                <div className="col-start-3 col-span-4 row-start-5 bg-accent"></div>
-              </div>
-            </div>
+            <img 
+              src={profileImage} 
+              alt="Abhiram Chittampally - Full Stack Developer" 
+              className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-cover"
+            />
           </div>
 
           {/* Title with typing effect styling */}
