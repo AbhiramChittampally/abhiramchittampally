@@ -18,16 +18,10 @@ export const About = () => {
                 </h3>
               </div>
               <p className="text-sm sm:text-base text-foreground leading-relaxed">
-                A results-driven Full Stack Developer with a deep passion for Artificial 
-                Intelligence and Machine Learning. Proficient in building robust, end-to-end 
-                web applications using the MERN stack. I am particularly interested in exploring 
-                Generative AI, Agentic AI systems, and the broader AI ecosystem to create 
-                intelligent, adaptive, and user-centric applications.
-              </p>
-              <p className="text-sm sm:text-base text-foreground leading-relaxed">
-                Leveraging my skills in data modeling and predictive analytics with libraries 
-                such as TensorFlow and Scikit-learn, I aim to build AI-powered solutions that 
-                seamlessly integrate cutting-edge intelligence into practical, real-world products.
+                Full Stack Developer skilled in building end-to-end applications using the MERN stack 
+                and Next.js. Experienced in AI and ML, with work involving Generative AI, Agentic AI, 
+                and Machine Learning tools such as PyTorch, TensorFlow, and Scikit-learn to develop 
+                intelligent, data-driven solutions for real-world problems.
               </p>
             </div>
           </PixelCard>
@@ -49,7 +43,7 @@ export const About = () => {
                   </h4>
                   <span className="text-[10px] sm:text-xs text-accent whitespace-nowrap">2022 – Present</span>
                 </div>
-                <p className="text-xs sm:text-sm">B.E. Computer Science • Hyderabad</p>
+                <p className="text-xs sm:text-sm">B.E. Computer Science - 7 CGPA • Hyderabad</p>
               </div>
             </PixelCard>
 
@@ -61,7 +55,7 @@ export const About = () => {
                   </h4>
                   <span className="text-[10px] sm:text-xs text-accent whitespace-nowrap">2020 – 2022</span>
                 </div>
-                <p className="text-xs sm:text-sm">Senior Secondary Education • Hyderabad</p>
+                <p className="text-xs sm:text-sm">Intermediate - 92.2% • Hyderabad</p>
               </div>
             </PixelCard>
 
@@ -69,11 +63,11 @@ export const About = () => {
               <div className="space-y-2 sm:space-y-3">
                 <div className="flex justify-between items-start flex-wrap gap-2">
                   <h4 className="font-['Press_Start_2P'] text-xs sm:text-sm text-primary">
-                    Hyderabad Public School
+                    Hyderabad Public School Ramanthapur
                   </h4>
-                  <span className="text-[10px] sm:text-xs text-accent whitespace-nowrap">2018 – 2020</span>
+                  <span className="text-[10px] sm:text-xs text-accent whitespace-nowrap">2017 – 2020</span>
                 </div>
-                <p className="text-xs sm:text-sm">High School • Ramanthapur</p>
+                <p className="text-xs sm:text-sm">High School - 8.05 CGPA • Hyderabad</p>
               </div>
             </PixelCard>
           </div>

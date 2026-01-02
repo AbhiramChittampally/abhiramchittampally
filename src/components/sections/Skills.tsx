@@ -2,24 +2,24 @@ import { PixelCard } from "@/components/PixelCard";
 
 const skillCategories = [
   {
-    category: "WEB TECH",
+    category: "FRONTEND",
     color: "primary",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Node.js", "Express.js"],
+    skills: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS", "Bootstrap"],
   },
   {
-    category: "STYLING",
+    category: "BACKEND",
     color: "secondary",
-    skills: ["Tailwind CSS", "Bootstrap"],
+    skills: ["Node.js", "Express.js", "REST API"],
   },
   {
     category: "AI/ML",
     color: "accent",
-    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "GenAI", "Agentic AI"],
+    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "Generative AI", "Agentic AI", "RAG", "LLM"],
   },
   {
     category: "DATABASE",
     color: "primary",
-    skills: ["MongoDB", "REST API"],
+    skills: ["MongoDB", "MySQL"],
   },
   {
     category: "TOOLS",
@@ -82,10 +82,9 @@ export const Skills = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {[
                 "Complete Web Development Course",
-                "Java Bootcamp Certificate",
-                "React.js Bootcamp Certificate",
-                "DSA with Java Bootcamp",
-                "JavaScript Bootcamp",
+                "Software Engineer Intern Certificate - HackerRank",
+                "Agentic AI - GFG",
+                "Generative AI - GFG",
               ].map((cert, idx) => (
                 <div key={idx} className="flex items-center gap-2">
                   <span className="text-accent text-base sm:text-lg md:text-xl">★</span>
