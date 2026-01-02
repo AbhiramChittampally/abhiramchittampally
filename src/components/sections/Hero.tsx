@@ -67,7 +67,7 @@ export const Hero = () => {
             <div className="pixel-border-sm bg-card p-3 sm:p-4">
               <div className="text-[10px] sm:text-xs text-muted-foreground mb-1 bright-text">PROJECTS</div>
               <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-['Press_Start_2P'] text-foreground">
-                4+
+                3+
               </div>
             </div>
             <div className="pixel-border-sm bg-card p-3 sm:p-4">
