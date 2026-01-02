@@ -45,22 +45,11 @@ export const Experience = () => {
                     </div>
                   </div>
 
-                  {/* Key Contributions */}
-                  <div className="pt-4 space-y-2">
-                    <div className="text-[10px] sm:text-xs text-muted-foreground">KEY CONTRIBUTIONS:</div>
-                    <ul className="space-y-2 text-xs sm:text-sm text-foreground">
-                      <li>• Built BI analytics tool similar to Power BI for automated insights</li>
-                      <li>• Developed RAG system using AWS Bedrock, S3, and IAM</li>
-                      <li>• Created Resume Analyzer and Voice Assistant with AWS Bedrock APIs</li>
-                      <li>• Built client website with FastAPI, implementing RBAC</li>
-                    </ul>
-                  </div>
-
                   {/* Skills Gained */}
                   <div className="pt-4 space-y-2">
                     <div className="text-[10px] sm:text-xs text-muted-foreground">SKILLS TRAINING:</div>
                     <div className="flex flex-wrap gap-2">
-                      {["Full Stack", "AWS Cloud", "RAG Systems", "AI/ML Integration", "API Development"].map(
+                      {["Full Stack Development", "Team Collaboration", "Real-world Projects"].map(
                         (skill, idx) => (
                           <span
                             key={idx}

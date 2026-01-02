@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "PassManager – Password Manager",
+    title: "PassManager",
     date: "Oct 2025",
     difficulty: "HARD",
     description:
@@ -12,7 +12,6 @@ const projects = [
       "React 19",
       "Vite",
       "TailwindCSS",
-      "React Toastify",
       "Node.js",
       "Express",
       "MongoDB",
@@ -20,7 +19,7 @@ const projects = [
     xp: "+500 XP",
   },
   {
-    title: "Brain Tumor Classification using CNN",
+    title: "Brain Tumor Classification",
     date: "Jul 2025",
     difficulty: "EXPERT",
     description:
@@ -36,6 +35,15 @@ const projects = [
       "Interactive Spotify-inspired web page with dynamic content loading and responsive design.",
     skills: ["HTML", "CSS", "JavaScript"],
     xp: "+300 XP",
+  },
+  {
+    title: "Static Netflix Homepage",
+    date: "Nov 2025",
+    difficulty: "EASY",
+    description:
+      "Pixel-perfect recreation of Netflix homepage with responsive design and modern CSS techniques.",
+    skills: ["HTML", "CSS"],
+    xp: "+200 XP",
   },
 ];
 
