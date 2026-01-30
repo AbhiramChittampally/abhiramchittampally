@@ -4,10 +4,12 @@ import { Skills } from "@/components/sections/Skills";
 import { Projects } from "@/components/sections/Projects";
 import { Experience } from "@/components/sections/Experience";
 import { Contact } from "@/components/sections/Contact";
+import { Navbar } from "@/components/Navbar";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background relative">
+    <main className="min-h-screen bg-background relative scroll-smooth">
+      <Navbar />
       {/* Pixel Grid Background */}
       <div className="fixed inset-0 opacity-5 pointer-events-none">
         <div
