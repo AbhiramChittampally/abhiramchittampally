@@ -87,7 +87,7 @@ const Index = () => {
                   <div className="w-2 h-2 bg-accent animate-pulse"></div>
                   <span className="text-[8px] text-muted-foreground">CURRENT</span>
                 </div>
-                <div className="text-[9px] leading-relaxed">SDE Intern @ Bodhtree</div>
+                <div className="text-[9px] leading-relaxed">SDE @ Bodhtree ✓</div>
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-1">

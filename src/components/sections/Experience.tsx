@@ -14,42 +14,54 @@ export const Experience = () => {
         <div className="max-w-3xl mx-auto">
           <PixelCard glow className="bg-card/80">
             <div className="space-y-6">
-              {/* Current Position */}
-              <div className="relative pl-6 sm:pl-8 border-l-2 sm:border-l-4 border-primary">
-                <div className="absolute -left-[6px] sm:-left-[10px] top-0 w-3 h-3 sm:w-4 sm:h-4 bg-primary animate-pulse"></div>
+              {/* Completed Position */}
+              <div className="relative pl-6 sm:pl-8 border-l-2 sm:border-l-4 border-accent">
+                <div className="absolute -left-[6px] sm:-left-[10px] top-0 w-3 h-3 sm:w-4 sm:h-4 bg-accent"></div>
                 
                 <div className="space-y-3">
                   <div className="flex justify-between items-start flex-wrap gap-2">
                     <h3 className="font-['Press_Start_2P'] text-xs sm:text-sm text-primary">
-                      Software Engineer Intern
+                      Software Development Intern
                     </h3>
-                    <span className="pixel-border-sm bg-primary text-primary-foreground px-2 py-1 text-[10px] sm:text-xs whitespace-nowrap">
-                      ACTIVE
+                    <span className="pixel-border-sm bg-accent text-accent-foreground px-2 py-1 text-[10px] sm:text-xs whitespace-nowrap">
+                      COMPLETED
                     </span>
                   </div>
                   
                   <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-xs sm:text-sm text-muted-foreground">
-                    <span>Bodhtree Consulting</span>
+                    <span>Bodhtree</span>
                     <span className="hidden sm:inline">•</span>
-                    <span className="text-[10px] sm:text-sm">Sep 2025 – Present</span>
+                    <span className="text-[10px] sm:text-sm">Sep 2025 – Dec 2025</span>
                   </div>
 
-                  {/* Progress Bar */}
-                  <div className="space-y-2 mt-4">
-                    <div className="flex justify-between text-[10px] sm:text-xs">
-                      <span className="text-muted-foreground">LEVEL PROGRESS</span>
-                      <span className="text-accent font-['Press_Start_2P']">IN PROGRESS</span>
-                    </div>
-                    <div className="pixel-border-sm bg-muted h-3 sm:h-4 overflow-hidden">
-                      <div className="bg-primary h-full w-[45%] animate-pulse"></div>
-                    </div>
+                  {/* Achievements */}
+                  <div className="pt-4 space-y-3">
+                    <div className="text-[10px] sm:text-xs text-muted-foreground">ACHIEVEMENTS UNLOCKED:</div>
+                    <ul className="space-y-2 text-xs sm:text-sm">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">▸</span>
+                        <span>Developed a <strong>BI analytics tool</strong> similar to Power BI for automated insights and visualizations</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">▸</span>
+                        <span>Built a <strong>RAG system</strong> using AWS Bedrock, S3, and IAM for document chat functionality</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">▸</span>
+                        <span>Created <strong>AI solutions</strong> including Resume Analyzer and Voice Assistant using AWS Bedrock APIs</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">▸</span>
+                        <span>Developed client website using <strong>FastAPI</strong> with RBAC-based access control</span>
+                      </li>
+                    </ul>
                   </div>
 
                   {/* Skills Gained */}
                   <div className="pt-4 space-y-2">
-                    <div className="text-[10px] sm:text-xs text-muted-foreground">SKILLS TRAINING:</div>
+                    <div className="text-[10px] sm:text-xs text-muted-foreground">SKILLS GAINED:</div>
                     <div className="flex flex-wrap gap-2">
-                      {["Full Stack Development", "Team Collaboration", "Real-world Projects"].map(
+                      {["Full-Stack Dev", "AWS Bedrock", "RAG Systems", "FastAPI", "AI/ML Integration"].map(
                         (skill, idx) => (
                           <span
                             key={idx}
