@@ -8,7 +8,7 @@ import { Navbar } from "@/components/Navbar";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background relative scroll-smooth">
+    <main className="min-h-screen bg-background relative scroll-smooth pt-14 md:pt-16">
       <Navbar />
       {/* Pixel Grid Background */}
       <div className="fixed inset-0 opacity-5 pointer-events-none">
