@@ -11,9 +11,14 @@ const navLinks = [
 
 export const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
-  const [isDark, setIsDark] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof window !== "undefined") {
+      return document.documentElement.classList.contains("dark");
+    }
+    return true;
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,9 +43,22 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleTheme = () => {
+    const newIsDark = !isDark;
+    setIsDark(newIsDark);
+    document.documentElement.classList.toggle("dark", newIsDark);
+    localStorage.setItem("theme", newIsDark ? "dark" : "light");
+  };
+
+  // Initialize theme on mount
   useEffect(() => {
-    document.documentElement.classList.toggle("dark", isDark);
-  }, [isDark]);
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const shouldBeDark = savedTheme ? savedTheme === "dark" : prefersDark;
+    
+    setIsDark(shouldBeDark);
+    document.documentElement.classList.toggle("dark", shouldBeDark);
+  }, []);
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -88,7 +106,7 @@ export const Navbar = () => {
           {/* Theme Toggle & Mobile Menu */}
           <div className="flex items-center gap-2">
             <button
-              onClick={() => setIsDark(!isDark)}
+              onClick={toggleTheme}
               className="pixel-border-sm p-2 hover:bg-muted transition-colors"
               aria-label="Toggle theme"
             >
