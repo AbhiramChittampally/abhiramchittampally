@@ -48,7 +48,7 @@ const projects = [
       "CNN-based brain tumor classification system using ResNet18 architecture. Built with PyTorch and Flask backend for real-time predictions.",
     skills: ["PyTorch", "Flask", "ResNet18", "HTML", "CSS", "JavaScript"],
     xp: "+750 XP",
-    link: "https://github.com/AbhiramChittampally",
+    link: "https://github.com/AbhiramChittampally/Brain-Tumor-Detection-using-CNN",
   },
   {
     title: "Spotify Dynamic WebPage",
