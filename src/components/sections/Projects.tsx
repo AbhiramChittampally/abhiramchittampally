@@ -10,7 +10,7 @@ const projects = [
       "A full-stack law firm website built with the MERN stack, featuring dynamic content management, client intake forms, and a responsive professional design.",
     skills: ["MongoDB", "Express.js", "React.js", "Node.js"],
     xp: "+600 XP",
-    link: "https://github.com/AbhiramChittampally",
+    link: "https://www.vivekavidhignya.com/",
   },
   {
     title: "Personal Portfolio Website",
