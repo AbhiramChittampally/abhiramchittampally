@@ -49,7 +49,7 @@ export const About = () => {
                   </h4>
                   <span className="text-[10px] sm:text-xs text-accent whitespace-nowrap">2022 – Present</span>
                 </div>
-                <p className="text-xs sm:text-sm">B.E. Computer Science • Hyderabad</p>
+                <p className="text-xs sm:text-sm">B.E. Computer Science • CGPA: 7.0 • Hyderabad</p>
               </div>
             </PixelCard>
 
@@ -61,7 +61,7 @@ export const About = () => {
                   </h4>
                   <span className="text-[10px] sm:text-xs text-accent whitespace-nowrap">2020 – 2022</span>
                 </div>
-                <p className="text-xs sm:text-sm">Senior Secondary Education • Hyderabad</p>
+                <p className="text-xs sm:text-sm">Intermediate • 92.2% • Hyderabad</p>
               </div>
             </PixelCard>
 
@@ -71,9 +71,9 @@ export const About = () => {
                   <h4 className="font-['Press_Start_2P'] text-xs sm:text-sm text-primary">
                     Hyderabad Public School
                   </h4>
-                  <span className="text-[10px] sm:text-xs text-accent whitespace-nowrap">2018 – 2020</span>
+                   <span className="text-[10px] sm:text-xs text-accent whitespace-nowrap">2017 – 2020</span>
                 </div>
-                <p className="text-xs sm:text-sm">High School • Ramanthapur</p>
+                <p className="text-xs sm:text-sm">High School • CGPA: 8.05 • Ramanthapur</p>
               </div>
             </PixelCard>
           </div>
