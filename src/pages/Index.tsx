@@ -112,9 +112,9 @@ const Index = () => {
             <div className="space-y-3">
               {[
                { name: "Law Firm Site", tech: "MERN" },
+                { name: "Portfolio", tech: "React" },
                 { name: "PassManager", tech: "MERN" },
                 { name: "Brain Tumor AI", tech: "PyTorch" },
-                { name: "Spotify Page", tech: "Web" },
               ].map((project, i) => (
                 <div key={i} className="space-y-1">
                   <div className="flex justify-between items-center">
