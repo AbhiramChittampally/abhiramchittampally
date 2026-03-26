@@ -20,7 +20,7 @@ const projects = [
       "A retro pixel-art themed personal portfolio website showcasing projects, skills, and experience with responsive design and modern web technologies.",
     skills: ["React", "TypeScript", "TailwindCSS", "Vite"],
     xp: "+400 XP",
-    link: "https://github.com/AbhiramChittampally",
+    link: "#",
   },
   {
     title: "PassManager",
@@ -58,7 +58,7 @@ const projects = [
       "Interactive Spotify-inspired web page with dynamic content loading and responsive design.",
     skills: ["HTML", "CSS", "JavaScript"],
     xp: "+300 XP",
-    link: "https://github.com/AbhiramChittampally",
+    link: "https://spotifyclone-abhiram.vercel.app/",
   },
 ];
 
