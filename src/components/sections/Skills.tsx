@@ -14,7 +14,7 @@ const skillCategories = [
   {
     category: "AI/ML",
     color: "accent",
-    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "GenAI", "Agentic AI"],
+    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "Generative AI", "Agentic AI", "RAG", "LLM"],
   },
   {
     category: "DATABASE",
@@ -82,10 +82,8 @@ export const Skills = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {[
                 "Complete Web Development Course",
-                "Java Bootcamp Certificate",
-                "React.js Bootcamp Certificate",
-                "DSA with Java Bootcamp",
-                "JavaScript Bootcamp",
+                "Agentic AI – GeeksforGeeks",
+                "Generative AI – GeeksforGeeks",
               ].map((cert, idx) => (
                 <div key={idx} className="flex items-center gap-2">
                   <span className="text-accent text-base sm:text-lg md:text-xl">★</span>

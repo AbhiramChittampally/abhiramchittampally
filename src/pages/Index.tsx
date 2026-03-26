@@ -57,12 +57,12 @@ const Index = () => {
             </div>
             <div className="grid grid-cols-3 gap-2">
               {[
-                { label: "React", icon: "⚛️" },
+               { label: "React", icon: "⚛️" },
                 { label: "Node", icon: "🟢" },
                 { label: "Python", icon: "🐍" },
                 { label: "Mongo", icon: "🍃" },
-                { label: "AI/ML", icon: "🤖" },
-                { label: "Git", icon: "📦" }
+                { label: "GenAI", icon: "🤖" },
+                { label: "Next.js", icon: "▲" }
               ].map((tech, i) => (
                 <div
                   key={i}
@@ -111,10 +111,10 @@ const Index = () => {
             </div>
             <div className="space-y-3">
               {[
+               { name: "Law Firm Site", tech: "MERN" },
                 { name: "PassManager", tech: "MERN" },
                 { name: "Brain Tumor AI", tech: "PyTorch" },
-                { name: "Spotify Clone", tech: "Web" },
-                { name: "Netflix Clone", tech: "HTML/CSS" },
+                { name: "Spotify Page", tech: "Web" },
               ].map((project, i) => (
                 <div key={i} className="space-y-1">
                   <div className="flex justify-between items-center">
@@ -164,11 +164,9 @@ const Index = () => {
             </div>
             <div className="space-y-2">
               {[
-                "Web Dev",
-                "React.js",
-                "Java",
-                "DSA",
-                "JavaScript"
+               "Web Dev",
+                "Agentic AI",
+                "Generative AI"
               ].map((cert, i) => (
                 <div
                   key={i}
