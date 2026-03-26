@@ -10,7 +10,7 @@ const projects = [
       "A full-stack law firm website built with the MERN stack, featuring dynamic content management, client intake forms, and a responsive professional design.",
     skills: ["MongoDB", "Express.js", "React.js", "Node.js"],
     xp: "+600 XP",
-    link: "https://github.com/AbhiramChittampally",
+    link: "https://www.vivekavidhignya.com/",
   },
   {
     title: "Personal Portfolio Website",
@@ -20,7 +20,7 @@ const projects = [
       "A retro pixel-art themed personal portfolio website showcasing projects, skills, and experience with responsive design and modern web technologies.",
     skills: ["React", "TypeScript", "TailwindCSS", "Vite"],
     xp: "+400 XP",
-    link: "https://github.com/AbhiramChittampally",
+    link: "#",
   },
   {
     title: "PassManager",
@@ -48,7 +48,7 @@ const projects = [
       "CNN-based brain tumor classification system using ResNet18 architecture. Built with PyTorch and Flask backend for real-time predictions.",
     skills: ["PyTorch", "Flask", "ResNet18", "HTML", "CSS", "JavaScript"],
     xp: "+750 XP",
-    link: "https://github.com/AbhiramChittampally",
+    link: "https://github.com/AbhiramChittampally/Brain-Tumor-Detection-using-CNN",
   },
   {
     title: "Spotify Dynamic WebPage",
@@ -58,7 +58,7 @@ const projects = [
       "Interactive Spotify-inspired web page with dynamic content loading and responsive design.",
     skills: ["HTML", "CSS", "JavaScript"],
     xp: "+300 XP",
-    link: "https://github.com/AbhiramChittampally",
+    link: "https://spotifyclone-abhiram.vercel.app/",
   },
 ];
 
