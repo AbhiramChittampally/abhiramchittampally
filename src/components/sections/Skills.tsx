@@ -4,7 +4,7 @@ const skillCategories = [
   {
     category: "WEB TECH",
     color: "primary",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Node.js", "Express.js"],
+    skills: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Node.js", "Express.js", "REST API"],
   },
   {
     category: "STYLING",
@@ -19,7 +19,7 @@ const skillCategories = [
   {
     category: "DATABASE",
     color: "primary",
-    skills: ["MongoDB", "REST API"],
+    skills: ["MongoDB"],
   },
   {
     category: "TOOLS",
