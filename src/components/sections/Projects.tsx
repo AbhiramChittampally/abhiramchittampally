@@ -36,6 +36,8 @@ const projects = [
       "Node.js",
       "Express",
       "MongoDB",
+      "body-parser",
+      "cors",
     ],
     xp: "+500 XP",
     link: "https://github.com/AbhiramChittampally/PassManager",

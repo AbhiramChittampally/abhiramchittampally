@@ -21,7 +21,7 @@ export const Experience = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between items-start flex-wrap gap-2">
                     <h3 className="font-['Press_Start_2P'] text-xs sm:text-sm text-primary">
-                      Software Development Intern
+                      Trainee Software Developer
                     </h3>
                     <span className="pixel-border-sm bg-accent text-accent-foreground px-2 py-1 text-[10px] sm:text-xs whitespace-nowrap">
                       COMPLETED
@@ -29,7 +29,7 @@ export const Experience = () => {
                   </div>
                   
                   <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-xs sm:text-sm text-muted-foreground">
-                    <span>Bodhtree</span>
+                    <span>Bodhtree Consulting Limited</span>
                     <span className="hidden sm:inline">•</span>
                     <span className="text-[10px] sm:text-sm">Sep 2025 – Dec 2025</span>
                   </div>
@@ -40,11 +40,11 @@ export const Experience = () => {
                     <ul className="space-y-2 text-xs sm:text-sm">
                       <li className="flex items-start gap-2">
                         <span className="text-accent">▸</span>
-                        <span>Developed a <strong>BI analytics tool</strong> similar to Power BI for automated insights and visualizations</span>
+                        <span>Developed a <strong>BI analytics tool</strong> enabling automated insights and visualizations for business datasets</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-accent">▸</span>
-                        <span>Built a <strong>RAG system</strong> using AWS Bedrock, S3, and IAM for document chat functionality</span>
+                        <span>Built a <strong>RAG system</strong> using AWS Bedrock, S3, and IAM, integrated the RAG with the BI tool</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-accent">▸</span>
@@ -52,7 +52,7 @@ export const Experience = () => {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-accent">▸</span>
-                        <span>Developed client website using <strong>FastAPI</strong> with RBAC-based access control</span>
+                        <span>Worked across <strong>full-stack development</strong>, cloud services, API development, and AI/ML integration to deliver scalable, production-ready solutions</span>
                       </li>
                     </ul>
                   </div>
@@ -61,7 +61,7 @@ export const Experience = () => {
                   <div className="pt-4 space-y-2">
                     <div className="text-[10px] sm:text-xs text-muted-foreground">SKILLS GAINED:</div>
                     <div className="flex flex-wrap gap-2">
-                      {["Full-Stack Dev", "AWS Bedrock", "RAG Systems", "FastAPI", "AI/ML Integration"].map(
+                      {["Full-Stack Dev", "AWS Bedrock", "RAG Systems", "Cloud Services", "AI/ML Integration"].map(
                         (skill, idx) => (
                           <span
                             key={idx}
