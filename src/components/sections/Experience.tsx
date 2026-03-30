@@ -61,7 +61,7 @@ export const Experience = () => {
                   <div className="pt-4 space-y-2">
                     <div className="text-[10px] sm:text-xs text-muted-foreground">SKILLS GAINED:</div>
                     <div className="flex flex-wrap gap-2">
-                      {["Full-Stack Dev", "AWS Bedrock", "RAG Systems", "FastAPI", "AI/ML Integration"].map(
+                      {["Full-Stack Dev", "AWS Bedrock", "RAG Systems", "Cloud Services", "AI/ML Integration"].map(
                         (skill, idx) => (
                           <span
                             key={idx}
