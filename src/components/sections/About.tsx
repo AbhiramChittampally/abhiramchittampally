@@ -18,16 +18,15 @@ export const About = () => {
                 </h3>
               </div>
               <p className="text-sm sm:text-base text-foreground leading-relaxed">
-                A results-driven Full Stack Developer with a deep passion for Artificial 
-                Intelligence and Machine Learning. Proficient in building robust, end-to-end 
-                web applications using the MERN stack. I am particularly interested in exploring 
-                Generative AI, Agentic AI systems, and the broader AI ecosystem to create 
-                intelligent, adaptive, and user-centric applications.
+                Computer Science graduate (June 2026) with hands-on experience building 
+                <strong> full-stack web applications</strong>, <strong>AI/ML systems</strong>, and <strong>data engineering solutions</strong>. 
+                Proficient in Python, JavaScript, Java, React.js, Node.js, Express.js, MongoDB, SQL, and Snowflake.
               </p>
               <p className="text-sm sm:text-base text-foreground leading-relaxed">
-                Leveraging my skills in data modeling and predictive analytics with libraries 
-                such as TensorFlow and Scikit-learn, I aim to build AI-powered solutions that 
-                seamlessly integrate cutting-edge intelligence into practical, real-world products.
+                Demonstrated track record developing production-grade web applications, engineering AI/ML architectures 
+                with PyTorch, Scikit-learn, and RAG pipelines, and completing a software development internship at Bodhtree Consulting. 
+                Currently undergoing structured advanced training in Advanced Python, Pandas/NumPy, SQL, and Kimball Data Modeling 
+                through the <strong>KMIT Talent Accelerator Program</strong>.
               </p>
             </div>
           </PixelCard>
@@ -47,9 +46,12 @@ export const About = () => {
                   <h4 className="font-['Press_Start_2P'] text-xs sm:text-sm text-primary">
                     Keshav Memorial Engineering College
                   </h4>
-                  <span className="text-[10px] sm:text-xs text-accent whitespace-nowrap">2022 – Present</span>
+                  <span className="text-[10px] sm:text-xs text-accent whitespace-nowrap">2022 – 2026</span>
                 </div>
-                <p className="text-xs sm:text-sm">B.E. Computer Science • CGPA: 7.0 • Hyderabad</p>
+                <p className="text-xs sm:text-sm">B.E. Computer Science • Graduated: June 2026 • Hyderabad, India</p>
+                <p className="text-[11px] sm:text-xs text-muted-foreground">
+                  Coursework: Data Structures & Algorithms, DBMS, SQL, Computer Networks, Operating Systems, OOP
+                </p>
               </div>
             </PixelCard>
 

@@ -32,6 +32,8 @@ export const Experience = () => {
                     <span>Bodhtree Consulting Limited</span>
                     <span className="hidden sm:inline">•</span>
                     <span className="text-[10px] sm:text-sm">Sep 2025 – Dec 2025</span>
+                    <span className="hidden sm:inline">•</span>
+                    <span className="text-[10px] sm:text-sm">Hyderabad, India</span>
                   </div>
 
                   {/* Achievements */}
@@ -40,19 +42,15 @@ export const Experience = () => {
                     <ul className="space-y-2 text-xs sm:text-sm">
                       <li className="flex items-start gap-2">
                         <span className="text-accent">▸</span>
-                        <span>Developed a <strong>BI analytics tool</strong> enabling automated insights and visualizations for business datasets</span>
+                        <span>Built a <strong>RAG pipeline</strong> using <strong>AWS Bedrock, S3, and IAM</strong> with data ingestion and semantic search; integrated it into a <strong>Business Intelligence analytics platform</strong> for AI-driven insight generation.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-accent">▸</span>
-                        <span>Built a <strong>RAG system</strong> using AWS Bedrock, S3, and IAM, integrated the RAG with the BI tool</span>
+                        <span>Developed a <strong>Resume Analyzer</strong> and <strong>Voice Assistant</strong> using <strong>AWS Bedrock LLM APIs</strong>; worked across backend, application integration, and user-facing components.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-accent">▸</span>
-                        <span>Created <strong>AI solutions</strong> including Resume Analyzer and Voice Assistant using AWS Bedrock APIs</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent">▸</span>
-                        <span>Worked across <strong>full-stack development</strong>, cloud services, API development, and AI/ML integration to deliver scalable, production-ready solutions</span>
+                        <span>Applied <strong>Python, Generative AI, SDLC, and Agile practices</strong> throughout development; maintained technical documentation and collaborated with cross-functional teams.</span>
                       </li>
                     </ul>
                   </div>
@@ -61,7 +59,7 @@ export const Experience = () => {
                   <div className="pt-4 space-y-2">
                     <div className="text-[10px] sm:text-xs text-muted-foreground">SKILLS GAINED:</div>
                     <div className="flex flex-wrap gap-2">
-                      {["Full-Stack Dev", "AWS Bedrock", "RAG Systems", "Cloud Services", "AI/ML Integration"].map(
+                      {["AWS Bedrock", "RAG Pipeline", "S3 & IAM", "Generative AI", "Semantic Search", "Python", "SDLC & Agile"].map(
                         (skill, idx) => (
                           <span
                             key={idx}
@@ -83,19 +81,19 @@ export const Experience = () => {
             <div className="flex items-center gap-2 sm:gap-3 mb-6">
               <div className="w-2 h-2 sm:w-3 sm:h-3 bg-secondary animate-pulse"></div>
               <h3 className="text-sm sm:text-base md:text-lg lg:text-2xl font-['Press_Start_2P'] text-secondary bright-text">
-                COURSEWORK
+                RELEVANT COURSEWORK
               </h3>
             </div>
 
             <PixelCard className="bg-card/50">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {[
-                  "Computer Networks",
-                  "Computer Architecture",
-                  "Design & Analysis of Algorithms",
-                  "Operating Systems",
                   "Data Structures & Algorithms",
-                  "Database Management Systems",
+                  "DBMS (Database Management Systems)",
+                  "SQL & Query Optimization",
+                  "Computer Networks",
+                  "Operating Systems",
+                  "Object-Oriented Programming (OOP)",
                 ].map((course, idx) => (
                   <div key={idx} className="flex items-center gap-2">
                     <span className="text-secondary text-base sm:text-lg md:text-xl">▸</span>

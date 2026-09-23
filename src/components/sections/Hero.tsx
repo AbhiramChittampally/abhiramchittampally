@@ -42,7 +42,7 @@ export const Hero = () => {
               <br />
               CHITTAMPALLY
             </h1>
-            <div className="flex flex-col sm:flex-row gap-2 justify-center items-center">
+            <div className="flex flex-wrap gap-2 justify-center items-center">
               <div className="pixel-border-sm inline-block bg-primary px-3 py-2 sm:px-4">
                 <p className="text-primary-foreground font-['Press_Start_2P'] text-[10px] sm:text-xs md:text-sm">
                   &gt; FULL STACK DEVELOPER
@@ -50,7 +50,12 @@ export const Hero = () => {
               </div>
               <div className="pixel-border-sm inline-block bg-secondary px-3 py-2 sm:px-4">
                 <p className="text-secondary-foreground font-['Press_Start_2P'] text-[10px] sm:text-xs md:text-sm">
-                  AI/ML ENTHUSIAST
+                  AI/ML SYSTEMS
+                </p>
+              </div>
+              <div className="pixel-border-sm inline-block bg-accent px-3 py-2 sm:px-4">
+                <p className="text-accent-foreground font-['Press_Start_2P'] text-[10px] sm:text-xs md:text-sm">
+                  DATA SOLUTIONS
                 </p>
               </div>
             </div>
@@ -61,19 +66,19 @@ export const Hero = () => {
             <div className="pixel-border-sm bg-card p-3 sm:p-4">
               <div className="text-[10px] sm:text-xs text-muted-foreground mb-1 bright-text">EXPERIENCE</div>
               <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-['Press_Start_2P'] text-foreground">
-                INTERN
+                SDE INTERN
               </div>
             </div>
             <div className="pixel-border-sm bg-card p-3 sm:p-4">
               <div className="text-[10px] sm:text-xs text-muted-foreground mb-1 bright-text">PROJECTS</div>
               <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-['Press_Start_2P'] text-foreground">
-                4+
+                5+
               </div>
             </div>
             <div className="pixel-border-sm bg-card p-3 sm:p-4">
               <div className="text-[10px] sm:text-xs text-muted-foreground mb-1 bright-text">TECH STACK</div>
               <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-['Press_Start_2P'] text-foreground">
-                MERN+AI
+                FULL-STACK+AI
               </div>
             </div>
           </div>

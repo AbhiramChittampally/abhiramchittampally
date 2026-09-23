@@ -33,15 +33,15 @@ const Index = () => {
             <div className="space-y-2 text-xs">
               <div className="flex justify-between">
                 <span className="text-muted-foreground">ROLE</span>
-                <span className="text-foreground">INTERN</span>
+                <span className="text-foreground">SDE / GRAD</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">STACK</span>
-                <span className="text-foreground">MERN</span>
+                <span className="text-foreground">FULL STACK</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">FOCUS</span>
-                <span className="text-foreground">AI/ML</span>
+                <span className="text-foreground">AI & DATA</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">LOCATION</span>
@@ -57,12 +57,12 @@ const Index = () => {
             </div>
             <div className="grid grid-cols-3 gap-2">
               {[
-               { label: "React", icon: "⚛️" },
-                { label: "Node", icon: "🟢" },
+                { label: "React", icon: "⚛️" },
                 { label: "Python", icon: "🐍" },
-                { label: "Mongo", icon: "🍃" },
-                { label: "GenAI", icon: "🤖" },
-                { label: "Next.js", icon: "▲" }
+                { label: "PyTorch", icon: "🔥" },
+                { label: "Node", icon: "🟢" },
+                { label: "Snowflake", icon: "❄️" },
+                { label: "Mongo", icon: "🍃" }
               ].map((tech, i) => (
                 <div
                   key={i}
@@ -85,16 +85,23 @@ const Index = () => {
               <div>
                 <div className="flex items-center gap-2 mb-1">
                   <div className="w-2 h-2 bg-accent animate-pulse"></div>
-                  <span className="text-[8px] text-muted-foreground">CURRENT</span>
+                  <span className="text-[8px] text-muted-foreground">TRAINING</span>
                 </div>
-                <div className="text-[9px] leading-relaxed">SDE @ Bodhtree ✓</div>
+                <div className="text-[9px] leading-relaxed">KMIT Accelerator</div>
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-1">
                   <div className="w-2 h-2 bg-foreground/40"></div>
-                  <span className="text-[8px] text-muted-foreground">EDUCATION</span>
+                  <span className="text-[8px] text-muted-foreground">EXPERIENCE</span>
                 </div>
-                <div className="text-[9px] leading-relaxed">CS @ KMEC</div>
+                <div className="text-[9px] leading-relaxed">Ex-SDE @ Bodhtree</div>
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <div className="w-2 h-2 bg-foreground/40"></div>
+                  <span className="text-[8px] text-muted-foreground">DEGREE</span>
+                </div>
+                <div className="text-[9px] leading-relaxed">B.E. CS @ KMEC '26</div>
               </div>
             </div>
           </div>
@@ -111,10 +118,10 @@ const Index = () => {
             </div>
             <div className="space-y-3">
               {[
-               { name: "Law Firm Site", tech: "MERN" },
-                { name: "Portfolio", tech: "React" },
-                { name: "PassManager", tech: "MERN" },
+                { name: "FitGuide", tech: "MERN+RAG" },
+                { name: "Legal Assoc.", tech: "MERN" },
                 { name: "Brain Tumor AI", tech: "PyTorch" },
+                { name: "PassManager", tech: "MERN" },
               ].map((project, i) => (
                 <div key={i} className="space-y-1">
                   <div className="flex justify-between items-center">
@@ -136,10 +143,10 @@ const Index = () => {
             </div>
             <div className="space-y-3">
               {[
-                { category: "Frontend", level: 85 },
-                { category: "Backend", level: 75 },
-                { category: "AI/ML", level: 70 },
-                { category: "Database", level: 65 },
+                { category: "Frontend", level: 90 },
+                { category: "Backend", level: 85 },
+                { category: "AI/ML & RAG", level: 85 },
+                { category: "Data & SQL", level: 80 },
               ].map((skill, i) => (
                 <div key={i}>
                   <div className="flex justify-between text-[9px] mb-1">
@@ -164,9 +171,10 @@ const Index = () => {
             </div>
             <div className="space-y-2">
               {[
-               "Web Dev",
+                "GenAI, LLM & RAG",
                 "Agentic AI",
-                "Generative AI"
+                "SQL & Git (GFG)",
+                "React Bootcamp",
               ].map((cert, i) => (
                 <div
                   key={i}
@@ -209,7 +217,7 @@ const Index = () => {
       <footer className="py-6 md:py-8 border-t-4 border-primary relative">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <p className="font-['Press_Start_2P'] text-[10px] sm:text-xs text-muted-foreground">
-            © 2025 ABHIRAM CHITTAMPALLY
+            © 2026 ABHIRAM CHITTAMPALLY
           </p>
           <p className="text-xs text-muted-foreground mt-2">
             CRAFTED WITH ❤️ IN PIXEL STYLE

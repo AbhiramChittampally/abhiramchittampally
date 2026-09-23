@@ -3,14 +3,51 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Law Firm Website",
+    title: "FitGuide – AI-Powered Full-Stack App",
+    date: "2026",
+    difficulty: "EXPERT",
+    description:
+      "Built and deployed a full-stack fitness application with personalized calorie and macro calculations, workout and meal tracking, authentication, and an AI chatbot using RAG with a custom knowledge base.",
+    skills: ["React.js", "Node.js", "Express.js", "MongoDB", "RAG", "REST APIs"],
+    xp: "+850 XP",
+    link: "https://fitguidess.onrender.com/",
+  },
+  {
+    title: "VivekaVidhignya Legal Associates",
     date: "Feb 2026",
     difficulty: "HARD",
     description:
-      "A full-stack law firm website built with the MERN stack, featuring dynamic content management, client intake forms, and a responsive professional design.",
-    skills: ["MongoDB", "Express.js", "React.js", "Node.js"],
-    xp: "+600 XP",
+      "Built and deployed a full-stack web application for a real law firm client; developed the React.js frontend, REST API backend, MongoDB data layer, and application deployment workflow.",
+    skills: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs"],
+    xp: "+700 XP",
     link: "https://www.vivekavidhignya.com/",
+  },
+  {
+    title: "Brain Tumor Classification",
+    date: "Jul 2025",
+    difficulty: "EXPERT",
+    description:
+      "Developed an image classification system using PyTorch and ResNet18 to classify MRI scans into four categories, achieving 99.4% validation accuracy; deployed model inference through a Flask REST API.",
+    skills: ["Python", "PyTorch", "Scikit-learn", "Flask", "ResNet18"],
+    xp: "+800 XP",
+    link: "https://github.com/AbhiramChittampally/Brain-Tumor-Detection-using-CNN",
+  },
+  {
+    title: "PassManager",
+    date: "Oct 2025",
+    difficulty: "HARD",
+    description:
+      "A full-stack password manager web application that allows users to securely store, view, edit, and delete their website credentials with a clean, responsive interface powered by React with MongoDB backend.",
+    skills: [
+      "React.js",
+      "TailwindCSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "REST APIs",
+    ],
+    xp: "+500 XP",
+    link: "https://github.com/AbhiramChittampally/PassManager",
   },
   {
     title: "Personal Portfolio Website",
@@ -20,47 +57,7 @@ const projects = [
       "A retro pixel-art themed personal portfolio website showcasing projects, skills, and experience with responsive design and modern web technologies.",
     skills: ["React", "TypeScript", "TailwindCSS", "Vite"],
     xp: "+400 XP",
-    link: "#",
-  },
-  {
-    title: "PassManager",
-    date: "Oct 2025",
-    difficulty: "HARD",
-    description:
-      "A full-stack password manager web application that allows users to securely store, view, edit, and delete their website credentials. Features a simple, responsive interface powered by React with MongoDB backend.",
-    skills: [
-      "React.js",
-      "TailwindCSS",
-      "React Toastify",
-      "UUID",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "body-parser",
-      "cors",
-    ],
-    xp: "+500 XP",
-    link: "https://github.com/AbhiramChittampally/PassManager",
-  },
-  {
-    title: "Brain Tumor Classification",
-    date: "Jul 2025",
-    difficulty: "EXPERT",
-    description:
-      "CNN-based brain tumor classification system using ResNet18 architecture. Built with PyTorch and Flask backend for real-time predictions.",
-    skills: ["PyTorch", "Flask", "ResNet18", "HTML", "CSS", "JavaScript"],
-    xp: "+750 XP",
-    link: "https://github.com/AbhiramChittampally/Brain-Tumor-Detection-using-CNN",
-  },
-  {
-    title: "Spotify Dynamic WebPage",
-    date: "Mar 2025",
-    difficulty: "MEDIUM",
-    description:
-      "Interactive Spotify-inspired web page with dynamic content loading and responsive design.",
-    skills: ["HTML", "CSS", "JavaScript"],
-    xp: "+300 XP",
-    link: "https://spotifyclone-abhiram.vercel.app/",
+    link: "https://abhiramchittampally.vercel.app",
   },
 ];
 
