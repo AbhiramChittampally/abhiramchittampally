@@ -63,22 +63,23 @@ export const Hero = () => {
 
           {/* Stats Bar */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 max-w-2xl mx-auto mt-6 md:mt-8 px-2 sm:px-4">
-            <div className="pixel-border-sm bg-card p-3 sm:p-4 flex flex-col justify-center items-center">
+            <div className="pixel-border-sm bg-card p-3 sm:p-4 flex flex-col justify-center items-center text-center min-h-[75px] sm:min-h-[85px]">
               <div className="text-[9px] sm:text-xs text-muted-foreground mb-1.5 bright-text uppercase tracking-wider">EXPERIENCE</div>
               <div className="text-xs sm:text-sm md:text-base font-['Press_Start_2P'] text-foreground whitespace-nowrap">
                 SDE INTERN
               </div>
             </div>
-            <div className="pixel-border-sm bg-card p-3 sm:p-4 flex flex-col justify-center items-center">
+            <div className="pixel-border-sm bg-card p-3 sm:p-4 flex flex-col justify-center items-center text-center min-h-[75px] sm:min-h-[85px]">
               <div className="text-[9px] sm:text-xs text-muted-foreground mb-1.5 bright-text uppercase tracking-wider">PROJECTS</div>
               <div className="text-xs sm:text-sm md:text-base font-['Press_Start_2P'] text-foreground whitespace-nowrap">
                 5+
               </div>
             </div>
-            <div className="pixel-border-sm bg-card p-3 sm:p-4 flex flex-col justify-center items-center">
+            <div className="pixel-border-sm bg-card p-3 sm:p-4 flex flex-col justify-center items-center text-center min-h-[75px] sm:min-h-[85px]">
               <div className="text-[9px] sm:text-xs text-muted-foreground mb-1.5 bright-text uppercase tracking-wider">TECH STACK</div>
-              <div className="text-xs sm:text-sm md:text-base font-['Press_Start_2P'] text-foreground whitespace-nowrap">
-                FULL STACK
+              <div className="text-[9px] sm:text-[11px] md:text-xs font-['Press_Start_2P'] text-foreground leading-snug">
+                <div>FULLSTACK(MERN)</div>
+                <div className="text-primary mt-1">+AI/ML</div>
               </div>
             </div>
           </div>
