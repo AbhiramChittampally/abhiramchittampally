@@ -70,7 +70,7 @@ const difficultyColors: Record<string, string> = {
 
 export const Projects = () => {
   return (
-    <section className="py-12 md:py-16 lg:py-20 relative" id="projects">
+    <section className="py-12 md:py-16 lg:py-20 relative scroll-mt-16 sm:scroll-mt-20" id="projects">
       <div className="container mx-auto px-4 md:px-6 xl:px-8">
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['Press_Start_2P'] text-center mb-4 bright-text px-4">
           &lt; QUEST LOG /&gt;
@@ -79,7 +79,7 @@ export const Projects = () => {
           ★ COMPLETED MISSIONS ★
         </p>
 
-        <div className="max-w-5xl mx-auto space-y-6">
+        <div className="max-w-5xl mx-auto space-y-4 sm:space-y-6">
           {projects.map((project, idx) => (
             <a
               key={idx}
@@ -92,16 +92,18 @@ export const Projects = () => {
                 <div className="space-y-3 sm:space-y-4">
                   {/* Header */}
                   <div className="flex justify-between items-start flex-wrap gap-2 sm:gap-3">
-                    <div className="flex items-center gap-2 sm:gap-3">
-                      <div className="w-2 h-2 sm:w-3 sm:h-3 bg-primary animate-pulse"></div>
-                      <h3 className="font-['Press_Start_2P'] text-sm sm:text-base md:text-lg text-primary group-hover:text-accent transition-colors">
-                        {project.title}
-                      </h3>
-                      <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="flex items-start gap-2 sm:gap-3 flex-1 min-w-0 pr-1">
+                      <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 bg-primary animate-pulse mt-1 sm:mt-1.5 flex-shrink-0"></div>
+                      <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap min-w-0">
+                        <h3 className="font-['Press_Start_2P'] text-xs sm:text-sm md:text-base lg:text-lg text-primary group-hover:text-accent transition-colors break-words leading-relaxed">
+                          {project.title}
+                        </h3>
+                        <ExternalLink className="w-3.5 h-3.5 text-muted-foreground opacity-70 sm:opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+                      </div>
                     </div>
-                    <div className="flex flex-wrap gap-2 sm:gap-3 items-center">
+                    <div className="flex flex-wrap gap-1.5 sm:gap-2 items-center flex-shrink-0">
                       <span
-                        className={`pixel-border-sm px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-['Press_Start_2P'] ${
+                        className={`pixel-border-sm px-2 py-0.5 sm:px-3 sm:py-1 text-[9px] sm:text-xs font-['Press_Start_2P'] ${
                           difficultyColors[project.difficulty]
                         }`}
                       >
@@ -112,14 +114,14 @@ export const Projects = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="text-sm sm:text-base text-foreground leading-relaxed">{project.description}</p>
+                  <p className="text-xs sm:text-sm md:text-base text-foreground leading-relaxed">{project.description}</p>
 
                   {/* Skills */}
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2">
                     {project.skills.map((skill, skillIdx) => (
                       <span
                         key={skillIdx}
-                        className="pixel-border-sm bg-muted px-2 sm:px-3 py-1 text-[10px] sm:text-xs"
+                        className="pixel-border-sm bg-muted px-2 py-0.5 sm:px-3 sm:py-1 text-[9px] sm:text-xs"
                       >
                         {skill}
                       </span>
@@ -127,11 +129,11 @@ export const Projects = () => {
                   </div>
 
                   {/* Footer */}
-                  <div className="flex justify-between items-center pt-2 border-t-2 border-border">
-                    <span className="font-['Press_Start_2P'] text-xs sm:text-sm text-accent">
+                  <div className="flex justify-between items-center pt-2 border-t-2 border-border flex-wrap gap-2">
+                    <span className="font-['Press_Start_2P'] text-[10px] sm:text-xs md:text-sm text-accent">
                       {project.xp}
                     </span>
-                    <div className="pixel-border-sm bg-primary px-2 sm:px-3 py-1 text-[10px] sm:text-xs text-primary-foreground">
+                    <div className="pixel-border-sm bg-primary px-2 sm:px-3 py-1 text-[9px] sm:text-xs text-primary-foreground">
                       ✓ COMPLETE
                     </div>
                   </div>

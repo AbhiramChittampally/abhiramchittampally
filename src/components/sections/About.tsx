@@ -2,7 +2,7 @@ import { PixelCard } from "@/components/PixelCard";
 
 export const About = () => {
   return (
-    <section className="py-12 md:py-16 lg:py-20 relative" id="about">
+    <section className="py-12 md:py-16 lg:py-20 relative scroll-mt-16 sm:scroll-mt-20" id="about">
       <div className="container mx-auto px-4 md:px-6 xl:px-8">
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['Press_Start_2P'] text-center mb-8 sm:mb-12 bright-text px-4">
           &lt; PLAYER STATS /&gt;

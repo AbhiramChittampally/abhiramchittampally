@@ -1,3 +1,4 @@
+import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Skills } from "@/components/sections/Skills";
@@ -7,7 +8,9 @@ import { Contact } from "@/components/sections/Contact";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background relative">
+    <main className="min-h-screen bg-background relative overflow-x-hidden">
+      <Navbar />
+
       {/* Pixel Grid Background */}
       <div className="fixed inset-0 opacity-5 pointer-events-none">
         <div
@@ -22,196 +25,15 @@ const Index = () => {
         />
       </div>
 
-      {/* Left Decorative Panel - Only on large screens */}
-      <div className="hidden xl:block fixed left-0 top-0 h-screen w-48 xl:w-56 2xl:w-64 pointer-events-none z-10">
-        <div className="p-6 space-y-6">
-          {/* Profile Summary */}
-          <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] mb-3 bright-text">
-              ★ PROFILE ★
-            </div>
-            <div className="space-y-2 text-xs">
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">ROLE</span>
-                <span className="text-foreground">SDE / GRAD</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">STACK</span>
-                <span className="text-foreground">FULL STACK</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">FOCUS</span>
-                <span className="text-foreground">AI & DATA</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">LOCATION</span>
-                <span className="text-foreground">HYD</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Tech Stack */}
-          <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] mb-3 bright-text">
-              ⚙️ TECH STACK
-            </div>
-            <div className="grid grid-cols-3 gap-2">
-              {[
-                { label: "React", icon: "⚛️" },
-                { label: "Python", icon: "🐍" },
-                { label: "PyTorch", icon: "🔥" },
-                { label: "Node", icon: "🟢" },
-                { label: "Snowflake", icon: "❄️" },
-                { label: "Mongo", icon: "🍃" }
-              ].map((tech, i) => (
-                <div
-                  key={i}
-                  className="pixel-border-sm bg-background/50 aspect-square flex flex-col items-center justify-center text-center hover:bg-muted/50 transition-colors"
-                  title={tech.label}
-                >
-                  <div className="text-lg">{tech.icon}</div>
-                  <div className="text-[6px] text-muted-foreground mt-1">{tech.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Current Status */}
-          <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] mb-3 bright-text">
-              📍 STATUS
-            </div>
-            <div className="space-y-3">
-              <div>
-                <div className="flex items-center gap-2 mb-1">
-                  <div className="w-2 h-2 bg-accent animate-pulse"></div>
-                  <span className="text-[8px] text-muted-foreground">TRAINING</span>
-                </div>
-                <div className="text-[9px] leading-relaxed">KMIT Accelerator</div>
-              </div>
-              <div>
-                <div className="flex items-center gap-2 mb-1">
-                  <div className="w-2 h-2 bg-foreground/40"></div>
-                  <span className="text-[8px] text-muted-foreground">EXPERIENCE</span>
-                </div>
-                <div className="text-[9px] leading-relaxed">Ex-SDE @ Bodhtree</div>
-              </div>
-              <div>
-                <div className="flex items-center gap-2 mb-1">
-                  <div className="w-2 h-2 bg-foreground/40"></div>
-                  <span className="text-[8px] text-muted-foreground">DEGREE</span>
-                </div>
-                <div className="text-[9px] leading-relaxed">B.E. CS @ KMEC '26</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Main Content Area */}
+      <div className="w-full relative z-0">
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Contact />
       </div>
-
-      {/* Right Decorative Panel - Only on large screens */}
-      <div className="hidden xl:block fixed right-0 top-0 h-screen w-48 xl:w-56 2xl:w-64 pointer-events-none z-10">
-        <div className="p-6 space-y-6">
-          {/* Projects Stats */}
-          <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] mb-3 bright-text">
-              📊 PROJECTS
-            </div>
-            <div className="space-y-3">
-              {[
-                { name: "FitGuide", tech: "MERN+RAG" },
-                { name: "Legal Assoc.", tech: "MERN" },
-                { name: "Brain Tumor AI", tech: "PyTorch" },
-                { name: "PassManager", tech: "MERN" },
-              ].map((project, i) => (
-                <div key={i} className="space-y-1">
-                  <div className="flex justify-between items-center">
-                    <span className="text-[9px] text-foreground">{project.name}</span>
-                    <span className="text-[7px] text-muted-foreground">{project.tech}</span>
-                  </div>
-                  <div className="h-1 bg-muted pixel-border-sm overflow-hidden">
-                    <div className="h-full bg-foreground/40 w-full"></div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Skills Overview */}
-          <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] mb-3 bright-text">
-              🎯 SKILLS
-            </div>
-            <div className="space-y-3">
-              {[
-                { category: "Frontend", level: 90 },
-                { category: "Backend", level: 85 },
-                { category: "AI/ML & RAG", level: 85 },
-                { category: "Data & SQL", level: 80 },
-              ].map((skill, i) => (
-                <div key={i}>
-                  <div className="flex justify-between text-[9px] mb-1">
-                    <span className="text-muted-foreground">{skill.category}</span>
-                    <span className="text-foreground">{skill.level}%</span>
-                  </div>
-                  <div className="h-2 bg-muted pixel-border-sm overflow-hidden">
-                    <div
-                      className="h-full bg-foreground/40 transition-all duration-1000"
-                      style={{ width: `${skill.level}%` }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Certifications */}
-          <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] mb-3 bright-text">
-              🏆 CERTS
-            </div>
-            <div className="space-y-2">
-              {[
-                "GenAI, LLM & RAG",
-                "Agentic AI",
-                "SQL & Git (GFG)",
-                "React Bootcamp",
-              ].map((cert, i) => (
-                <div
-                  key={i}
-                  className="flex items-center gap-2 text-[9px]"
-                >
-                  <span className="text-foreground/60">✓</span>
-                  <span className="text-foreground/80">{cert}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Contact Quick Access */}
-          <div className="pixel-border bg-card/60 backdrop-blur-sm p-4">
-            <div className="font-['Press_Start_2P'] text-[10px] mb-3 bright-text">
-              📧 CONTACT
-            </div>
-            <div className="space-y-2 text-[8px]">
-              <div className="flex items-start gap-2">
-                <span className="text-foreground/60">@</span>
-                <span className="text-foreground/80 break-all">abhiram1.chittampally@gmail.com</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-foreground/60">📱</span>
-                <span className="text-foreground/80">+91 6301544192</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Contact />
 
       {/* Footer */}
       <footer className="py-6 md:py-8 border-t-4 border-primary relative">

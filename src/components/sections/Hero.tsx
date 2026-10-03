@@ -8,7 +8,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden scanlines">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden scanlines pt-20 pb-12 sm:pt-24 sm:pb-16 md:pt-28 md:pb-20">
       {/* Pixel Stars Background */}
       <div className="absolute inset-0 opacity-20">
         {[...Array(50)].map((_, i) => (
@@ -25,36 +25,36 @@ export const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-6 xl:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8">
+        <div className="max-w-4xl mx-auto text-center space-y-5 sm:space-y-6 md:space-y-8">
           {/* Profile Photo */}
-          <div className="inline-block pixel-border bg-card p-4 md:p-5 mb-4">
+          <div className="inline-block pixel-border bg-card p-3 sm:p-4 md:p-5 mb-2 sm:mb-4">
             <img 
               src={profileImage} 
               alt="Abhiram Chittampally - Full Stack Developer" 
-              className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-cover"
+              className="w-28 h-28 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-cover"
             />
           </div>
 
           {/* Title with typing effect styling */}
-          <div className="space-y-4">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl bright-text mb-4 px-4">
+          <div className="space-y-3 sm:space-y-4">
+            <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl bright-text mb-3 sm:mb-4 px-2 sm:px-4 break-words tracking-tight">
               ABHIRAM
               <br />
               CHITTAMPALLY
             </h1>
-            <div className="flex flex-wrap gap-2 justify-center items-center">
-              <div className="pixel-border-sm inline-block bg-primary px-3 py-2 sm:px-4">
-                <p className="text-primary-foreground font-['Press_Start_2P'] text-[10px] sm:text-xs md:text-sm">
+            <div className="flex flex-wrap gap-2 justify-center items-center px-2">
+              <div className="pixel-border-sm inline-block bg-primary px-2.5 py-1.5 sm:px-4 sm:py-2">
+                <p className="text-primary-foreground font-['Press_Start_2P'] text-[9px] sm:text-xs md:text-sm">
                   &gt; FULL STACK DEVELOPER
                 </p>
               </div>
-              <div className="pixel-border-sm inline-block bg-secondary px-3 py-2 sm:px-4">
-                <p className="text-secondary-foreground font-['Press_Start_2P'] text-[10px] sm:text-xs md:text-sm">
+              <div className="pixel-border-sm inline-block bg-secondary px-2.5 py-1.5 sm:px-4 sm:py-2">
+                <p className="text-secondary-foreground font-['Press_Start_2P'] text-[9px] sm:text-xs md:text-sm">
                   AI/ML SYSTEMS
                 </p>
               </div>
-              <div className="pixel-border-sm inline-block bg-accent px-3 py-2 sm:px-4">
-                <p className="text-accent-foreground font-['Press_Start_2P'] text-[10px] sm:text-xs md:text-sm">
+              <div className="pixel-border-sm inline-block bg-accent px-2.5 py-1.5 sm:px-4 sm:py-2">
+                <p className="text-accent-foreground font-['Press_Start_2P'] text-[9px] sm:text-xs md:text-sm">
                   DATA SOLUTIONS
                 </p>
               </div>
@@ -62,46 +62,45 @@ export const Hero = () => {
           </div>
 
           {/* Stats Bar */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 max-w-2xl mx-auto mt-6 md:mt-8 px-4">
-            <div className="pixel-border-sm bg-card p-3 sm:p-4">
-              <div className="text-[10px] sm:text-xs text-muted-foreground mb-1 bright-text">EXPERIENCE</div>
-              <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-['Press_Start_2P'] text-foreground">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 max-w-2xl mx-auto mt-6 md:mt-8 px-2 sm:px-4">
+            <div className="pixel-border-sm bg-card p-3 sm:p-4 flex flex-col justify-center items-center">
+              <div className="text-[9px] sm:text-xs text-muted-foreground mb-1.5 bright-text uppercase tracking-wider">EXPERIENCE</div>
+              <div className="text-xs sm:text-sm md:text-base font-['Press_Start_2P'] text-foreground whitespace-nowrap">
                 SDE INTERN
               </div>
             </div>
-            <div className="pixel-border-sm bg-card p-3 sm:p-4">
-              <div className="text-[10px] sm:text-xs text-muted-foreground mb-1 bright-text">PROJECTS</div>
-              <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-['Press_Start_2P'] text-foreground">
+            <div className="pixel-border-sm bg-card p-3 sm:p-4 flex flex-col justify-center items-center">
+              <div className="text-[9px] sm:text-xs text-muted-foreground mb-1.5 bright-text uppercase tracking-wider">PROJECTS</div>
+              <div className="text-xs sm:text-sm md:text-base font-['Press_Start_2P'] text-foreground whitespace-nowrap">
                 5+
               </div>
             </div>
-            <div className="pixel-border-sm bg-card p-3 sm:p-4">
-              <div className="text-[10px] sm:text-xs text-muted-foreground mb-1 bright-text">TECH STACK</div>
-              <div className="text-base sm:text-lg md:text-xl lg:text-2xl font-['Press_Start_2P'] text-foreground">
-                FULL-STACK+AI
+            <div className="pixel-border-sm bg-card p-3 sm:p-4 flex flex-col justify-center items-center">
+              <div className="text-[9px] sm:text-xs text-muted-foreground mb-1.5 bright-text uppercase tracking-wider">TECH STACK</div>
+              <div className="text-xs sm:text-sm md:text-base font-['Press_Start_2P'] text-foreground whitespace-nowrap">
+                FULL STACK
               </div>
             </div>
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 text-xs sm:text-sm px-4">
-            <div className="flex items-center gap-2 pixel-border-sm bg-muted px-2 sm:px-3 py-2">
-              <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm px-2 sm:px-4">
+            <div className="flex items-center gap-2 pixel-border-sm bg-muted px-2.5 sm:px-3 py-1.5 sm:py-2">
+              <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" />
               <span>Hyderabad, TG</span>
             </div>
-            <div className="flex items-center gap-2 pixel-border-sm bg-muted px-2 sm:px-3 py-2">
-              <Phone className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
-              <span className="hidden sm:inline">+91 6301544192</span>
-              <span className="sm:hidden">+91 630154...</span>
+            <div className="flex items-center gap-2 pixel-border-sm bg-muted px-2.5 sm:px-3 py-1.5 sm:py-2">
+              <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" />
+              <span>+91 6301544192</span>
             </div>
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-4 px-4">
-            <PixelButton onClick={() => scrollToSection("projects")} variant="primary" size="sm">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-2 sm:pt-4 px-4 w-full max-w-xs sm:max-w-none mx-auto">
+            <PixelButton onClick={() => scrollToSection("projects")} variant="primary" size="sm" className="w-full sm:w-auto text-[11px] sm:text-xs py-2.5 sm:py-3">
               ▶ VIEW QUESTS
             </PixelButton>
-            <PixelButton onClick={() => scrollToSection("contact")} variant="accent" size="sm">
+            <PixelButton onClick={() => scrollToSection("contact")} variant="accent" size="sm" className="w-full sm:w-auto text-[11px] sm:text-xs py-2.5 sm:py-3">
               ✉ MESSAGE
             </PixelButton>
           </div>

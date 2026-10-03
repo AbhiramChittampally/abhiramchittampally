@@ -35,7 +35,7 @@ const skillCategories = [
 
 export const Skills = () => {
   return (
-    <section className="py-12 md:py-16 lg:py-20 relative" id="skills">
+    <section className="py-12 md:py-16 lg:py-20 relative scroll-mt-16 sm:scroll-mt-20" id="skills">
       <div className="container mx-auto px-4 md:px-6 xl:px-8">
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['Press_Start_2P'] text-center mb-4 bright-text px-4">
           &lt; INVENTORY /&gt;
@@ -44,7 +44,7 @@ export const Skills = () => {
           ★ COLLECTED POWER-UPS ★
         </p>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {skillCategories.map((category, idx) => (
             <PixelCard key={idx} glow className="bg-card/80">
               <div className="space-y-3 sm:space-y-4">
@@ -54,11 +54,11 @@ export const Skills = () => {
                     {category.category}
                   </h3>
                 </div>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {category.skills.map((skill, skillIdx) => (
                     <div
                       key={skillIdx}
-                      className="pixel-border-sm bg-muted px-2 sm:px-3 py-1 text-[10px] sm:text-xs hover:bg-primary hover:text-primary-foreground transition-colors cursor-default"
+                      className="pixel-border-sm bg-muted px-2 py-0.5 sm:px-3 sm:py-1 text-[9px] sm:text-xs hover:bg-primary hover:text-primary-foreground transition-colors cursor-default"
                     >
                       {skill}
                     </div>
@@ -80,7 +80,7 @@ export const Skills = () => {
             </div>
 
             <PixelCard className="bg-card/50">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
                 {[
                   "Generative AI, LLM & RAG – GeeksForGeeks",
                   "Agentic AI – GeeksForGeeks",
